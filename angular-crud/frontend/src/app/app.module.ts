@@ -31,6 +31,7 @@ import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from  '@angular/common';
 import { ForDirective } from './directives/for.directive';
 import { ProductsComponent } from './views/products/products.component';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
 
 
 registerLocaleData(localePt);
@@ -46,6 +47,7 @@ registerLocaleData(localePt);
     ForDirective,
     ProductCreateComponent,
     ProductsComponent,
+    ProductReadComponent,
   ],
   imports: [
     BrowserModule,
