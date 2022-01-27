@@ -14,9 +14,10 @@ import { MatSidenavModule } from  '@angular/material/sidenav';
 import { MatCardModule } from  '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
-import { ProductsCrudComponent } from './views/products-crud/products-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { ProductsComponent } from './views/products/products.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +26,10 @@ import { ForDirective } from './directives/for.directive';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProductsCrudComponent,
     RedDirective,
-    ForDirective
+    ForDirective,
+    ProductCreateComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
