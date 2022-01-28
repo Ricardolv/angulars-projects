@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../model/course';
+import { CourseService } from '../services/course.service';
 
 @Component({
   selector: 'app-courses',
@@ -11,10 +12,10 @@ export class CoursesComponent implements OnInit {
   courses: Course[] = [];
   displayedColumns = ['name', 'category']
 
-  constructor() {
-  }
+  constructor(private courseService: CourseService) {}
 
   ngOnInit(): void {
+    this.courses = this.courseService.list()
   }
 
 }
