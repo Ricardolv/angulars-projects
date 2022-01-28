@@ -1,7 +1,8 @@
 const PROXY_CONFIG = [
   {
     context: ['/api'],
-    target: 'http://localhost:8080/',
+    target: 'http://application-crud-api.herokuapp.com/',
+    changeOrigin: true,
     secure: false,
     logLevel: 'debug'
   }
